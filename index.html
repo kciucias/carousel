@@ -15,46 +15,52 @@
 <h1>Gallery</h1>
 <p>
   View:
-  <a href="#carousel-cell1">Slide 1</a>,
-  <a href="#carousel-cell2">Slide 2</a>,
-  <a href="#carousel-cell3">Slide 3</a>,
-  <a href="#carousel-cell4">Slide 4</a>,
+  <a href="#carousel-cell1">Slide 1</a>
+  <a href="#carousel-cell2">Slide 2</a>
+  <a href="#carousel-cell3">Slide 3</a>
+  <a href="#carousel-cell4">Slide 4</a>
   <a href="#carousel-cell5">Slide 5</a>
 </p>
 
-<div class="main-carousel">
+<button class="button">Reset</button>
+
+<div class="main-carousel" 
+data-flickity='{ "freeScroll": true, "contain": true, "pageDots": false }'>
   <div class="carousel-cell" id="carousel-cell1" style="background-image: url(https://images.unsplash.com/photo-1522751046196-ef486230eff1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ef62104a41068fcbdf52839e0b523a0&auto=format&fit=crop&w=500&q=60); background-size: cover;">
     <div class="container">
       <p>First slide</p>
     </div>
   </div>
 
-  <div class="carousel-cell" id="carousel-cell2" style="background-image: url(https://images.unsplash.com/photo-1522751046196-ef486230eff1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ef62104a41068fcbdf52839e0b523a0&auto=format&fit=crop&w=500&q=60); background-size: cover;" >
+  <div class="carousel-cell" id="carousel-cell2" style="background-image: url(https://images.unsplash.com/photo-1530233173487-849dc2a4a090?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4fd88d193d6f6f172bfafa1bc72d7038&auto=format&fit=crop&w=500&q=60); background-size: cover;" >
     <div class="container">
       <p>Second slide</p>
     </div>
   </div>
 
-  <div class="carousel-cell" id="carousel-cell3" style="background-image: url(https://images.unsplash.com/photo-1522751046196-ef486230eff1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ef62104a41068fcbdf52839e0b523a0&auto=format&fit=crop&w=500&q=60); background-size: cover;">
+  <div class="carousel-cell" id="carousel-cell3" style="background-image: url(https://images.unsplash.com/photo-1530230646607-5a641a2f24af?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7713d5b96729a8228cdf9601dcd54532&auto=format&fit=crop&w=500&q=60); background-size: cover;">
     <div class="container">
       <p>Third slide</p>
     </div>
   </div>
 
-  <div class="carousel-cell" id="carousel-cell4" style="background-image: url(https://images.unsplash.com/photo-1522751046196-ef486230eff1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ef62104a41068fcbdf52839e0b523a0&auto=format&fit=crop&w=500&q=60); background-size: cover;">
+  <div class="carousel-cell" id="carousel-cell4" style="background-image: url(https://images.unsplash.com/photo-1530208381868-2128097819a2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a8cdb88f55ed396e44c5ecc808cb6757&auto=format&fit=crop&w=500&q=60); background-size: cover;">
     <div class="container">
       <p>Forth slide</p>
     </div>
   </div>
 
-  <div class="carousel-cell" id="carousel-cell5" style="background-image: url(https://images.unsplash.com/photo-1522751046196-ef486230eff1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ef62104a41068fcbdf52839e0b523a0&auto=format&fit=crop&w=500&q=60); background-size: cover;">
+  <div class="carousel-cell" id="carousel-cell5" style="background-image: url(https://images.unsplash.com/photo-1530205671873-18380fd9257e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=927d6866a2d88f506f33b70963777b92&auto=format&fit=crop&w=500&q=60); background-size: cover;">
     <div class="container">
       <p>Fifth slide</p>
     </div>
   </div>
 </div>
 
+<div class="progress-bar"></div>
+
 	<script src="vendor/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
   <script src="js/script.js"></script>
 	</body>
 </html>
