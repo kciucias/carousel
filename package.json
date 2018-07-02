@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "mkdirp": "^0.5.1",
+    "mustache": "^2.3.0",
     "normalize.css": "^8.0.0"
   }
 }
