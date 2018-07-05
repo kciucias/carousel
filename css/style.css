@@ -1,11 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 * { box-sizing: border-box; }
 
+body { background-color: #ccc; }
+
 h1 { text-transform: uppercase; color: #000; text-align: center; font-size: 52px; }
 
 p { text-align: center; }
 
-.button { position: absolute; background: #000; z-index: 1; padding: 2px 20px; font-size: 32px; color: white; }
+p a { text-decoration: none; font-size: 16px; color: #000; padding: 20px 10px; font-weight: bold; }
+
+.button { position: absolute; background: #000; z-index: 1; padding: 2px 20px; font-size: 48px; color: white; }
 
 .main-carousel { width: 640px; height: 360px; margin: 0 auto; min-height: 250px; background: #EEE; }
 

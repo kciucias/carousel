@@ -4,9 +4,14 @@
 
 //variables
 $color-white: #fff;
+$color-grey: #ccc;
 $color-gold: #f1c40f;
 $color-black: #000;
 $fonts: 'Open Sans', sans-serif;
+
+body {
+background-color: $color-grey;
+}
 
 h1 {
 	text-transform: uppercase;
@@ -17,6 +22,13 @@ h1 {
 
 p {
 	text-align: center;
+	a {
+		text-decoration: none;
+		font-size: 16px;
+		color: $color-black;
+		padding: 20px 10px;
+		font-weight: bold;
+	}
 }
 
 .button {
@@ -24,7 +36,7 @@ p {
   	background: $color-black;
   	z-index: 1;
   	padding: 2px 20px;
-  	font-size: 32px;
+  	font-size: 48px;
   	color: white;
 }	
 
