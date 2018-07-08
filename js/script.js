@@ -18,7 +18,7 @@ flkty.on( 'scroll', function( progress ) {
   progressBar.style.width = progress * 100 + '%';
 });
 
-// reset 
+// reset button
 document.getElementById('reset').addEventListener('click', function() {
     flkty.select(0);
 });
@@ -33,5 +33,22 @@ for (var i = 0; i < anchors.length; i++) {
         flkty.select(slideNumber);
     });
 }
+
+//mustache
+var templateSlide = document.getElementById('template-slide').innerHTML;
+Mustache.parse(templateSlide);
+
+var results = document.getElementById('results').innerHTML;
+
+var allSlides ='';
+
+for(var i = 0; i < slides.length; i++){
+    console.log(slides);
+    allSlides += Mustache.render(templateSlide, slides[i]);
+  }
+
+var generateSlides = Mustache.render(templateSlide, allSlides)
+
+results.insertAdjacentHTML('beforeend', generateSlides);
 
 })(); 
